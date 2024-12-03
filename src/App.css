@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.fira-sans-bold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  color: white;
+}
+
+.icon {
+  -webkit-text-fill-color: transparent;
+}
+
+.blinking-cursor {
+  display: inline-block;
+
+  animation: blink 1s infinite step-start; /* Blinking animation */
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* translate animation css */
+.translate-container-opacity {
+  opacity: 1;
+}
+.translate-container-opacity:hover {
+  transform: translateX(40);
+}
+.full-container-wrapper:hover .translate-container-opacity {
+  opacity: 0;
+}
+.container-translate {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+
+  background-color: black;
+  opacity: 80%;
+}
