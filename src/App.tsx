@@ -10,11 +10,11 @@ import Footer from './Pages/Footer';
 function App() {
   return (
     <>
-      {/* <HomePage />
-      <AboutUs /> */}
+      <HomePage />
+      <AboutUs />
       <Services />
       <Footer />
-      {/* <FloatingButton /> */}
+      <FloatingButton />
     </>
   );
 }

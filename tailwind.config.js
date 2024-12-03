@@ -7,6 +7,8 @@ module.exports = {
         "navbar-bg":
           "url('https://krispcall.com/wp-content/uploads/2024/12/cyber-monday-sub-nav-bar-bkg-img.png')",
         "footer-texture": "url('/images/footer-texture.png')",
+        "button-gradient":
+          "linear-gradient(90deg, #7114EF 0%, #1475F7 50%, #7114EF)",
       },
 
       boxShadow: {
