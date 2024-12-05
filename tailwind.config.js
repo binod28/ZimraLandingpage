@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js,tsx}"],
   theme: {
     extend: {
+      transitionTimingFunction: {
+        custom: "cubic-bezier(.38, 3, .57, 1.6)",
+      },
+
       backgroundImage: {
         "navbar-bg":
           "url('https://krispcall.com/wp-content/uploads/2024/12/cyber-monday-sub-nav-bar-bkg-img.png')",

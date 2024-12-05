@@ -23,6 +23,35 @@
   font-weight: 500;
   font-style: normal;
 }
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   color: white;
@@ -62,4 +91,763 @@ body {
 
   background-color: black;
   opacity: 80%;
+}
+
+.box_shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* navbar css started */
+.header-container {
+  padding: 0.5rem 0; /* py-2 */
+  width: 100%; /* w-full */
+  background-color: #f87171; /* bg-red-500 */
+  background: rgb(2, 2, 46); /* Assuming bg-navbar-bg as a custom color */
+}
+
+/* Header Content */
+.header-content {
+  max-width: 1200px;
+  /* max-w-7xl */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left Section */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* lg:gap-2 */
+}
+
+.text-info {
+  display: flex;
+  gap: 0.5rem; /* gap-2 */
+  align-items: center;
+}
+
+.discount-offer,
+.annual-plan,
+.cyber-sale {
+  font-size: 15px; /* text-[15px] */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.discount-offer {
+  color: #0bcfd6;
+}
+
+.annual-plan {
+  color: #fb03a8;
+}
+
+.cyber-sale {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Countdown */
+.countdown {
+  height: 1.5rem; /* h-6 */
+  width: 1.5rem; /* w-6 */
+  background-color: white;
+  border-radius: 5px; /* rounded-[5px] */
+  font-weight: bold;
+  font-size: 14px; /* text-[14px] */
+  color: black;
+  display: grid;
+  place-content: center;
+}
+
+/* Right Section */
+.right-section {
+  display: flex;
+  gap: 1rem; /* lg:gap-3 */
+  align-items: center;
+}
+
+/* Buttons */
+.partner-button {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  background-color: transparent;
+  color: white;
+  font-size: 14px; /* lg:text-[14px] */
+  gap: 0.5rem; /* gap-2 */
+  justify-content: center;
+  cursor: pointer;
+}
+
+.demo-button,
+.login-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 5px 10px; /* px-2 py-[5px] */
+  background-color: white;
+  border-radius: 4px; /* rounded-[4px] */
+}
+
+.demo-button p,
+.login-button p {
+  font-size: 12px; /* text-[12px] */
+  color: black;
+}
+
+/* Icon Styling */
+span {
+  font-size: 18px; /* default size for icons */
+}
+
+.container {
+  min-width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  max-width: 1200px;
+  /* Max-width of 7xl (based on Tailwind's max-w-7xl) */
+  margin: 0 auto;
+  padding: 1rem; /* Adjusted padding for mobile, will change on larger screens */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  width: 140px;
+  height: 56px; /* Height of 14 (in Tailwind) */
+}
+
+.logo-img {
+  height: 44px; /* Adjusted for the 11 (h-11) height */
+  width: 100px; /* Adjusted width for 100px */
+  border-radius: 8px; /* Tailwind's rounded-lg */
+}
+
+/* Navigation List */
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-size: 1em;
+  color: black;
+}
+
+.nav-item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.arrow {
+  width: 14px;
+  height: 14px;
+  /* Use an arrow icon or a span for an actual arrow */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Call to Action Button */
+.cta {
+  display: grid;
+  place-items: center;
+  background-color: #002653;
+  color: white;
+  border-radius: 8px; /* rounded-lg */
+  width: 144px; /* width: 36 (in Tailwind) * 4 for rem scale */
+  height: 44px; /* height: 11 (in Tailwind) * 4 for rem scale */
+  font-weight: 500;
+  font-size: 17px;
+}
+
+/* Responsive Styles (adjusts for large screens like Tailwind's lg breakpoint) */
+@media (min-width: 1024px) {
+  .content {
+    padding: 1rem 2rem;
+  }
+
+  .cta {
+    width: 144px;
+    height: 44px;
+  }
+}
+
+/* hero section css */
+.hero-container {
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+  max-width: 96%; /* Max-width for 6xl equivalent */
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Hero Heading */
+.hero-heading {
+  font-size: 2em;
+  margin-top: 4rem; /* lg:mt-24 equivalent */
+}
+
+.hero-highlight {
+  color: #002653;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.hero-subtext {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.hero-text-center {
+  text-align: center;
+}
+
+/* Blinking Cursor */
+.blinking-cursor {
+  background-color: #ff7f00; /* orange-500 equivalent */
+  display: inline-block;
+  width: 2px;
+  height: 50px;
+  animation: blink 0.7s infinite step-start;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Hero Description */
+.hero-description {
+  width: 100%;
+}
+
+.description-text {
+  max-width: 627px;
+  margin: 0 auto;
+  color: #4d4950;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 2rem;
+}
+
+.demo-button {
+  border: 1px solid #d1d4dc;
+  height: 44px;
+  width: 192px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.button-text {
+  color: black;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.get-started-button {
+  display: grid;
+  place-items: center;
+  background-color: #002653;
+  color: white;
+  border-radius: 8px;
+  width: 192px;
+  height: 44px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+/* Logos Section */
+.logos-section {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.logos-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.logo-item {
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.logo-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.integration-text {
+  font-size: 16px;
+  color: #4d4950;
+  font-weight: 500;
+  text-align: center;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+/* Hero Image Section */
+.about-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.about-rounded-container {
+  position: relative;
+  margin-left: 30%;
+  margin-top: -40px;
+  width: 70%;
+  background-color: gray;
+  height: 192px;
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+.about-us-circle {
+  position: absolute;
+  top: 35%;
+  background-color: #07abf3;
+  left: -28px;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  display: grid;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  place-content: center;
+}
+
+.custom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 20px; /* Space between the items */
+}
+
+.custom-item {
+  display: flex;
+  width: 385px;
+  height: 135px;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #ccc; /* Right border between items */
+}
+
+.image-container {
+  width: 68px;
+  height: 100%;
+  border-radius: 8px;
+  padding: 12px 0; /* Vertical padding */
+}
+
+.image-container img {
+  width: 65px;
+  height: 65px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Gap between text elements */
+  width: 60%;
+  align-items: flex-start;
+}
+
+.text-container h3 {
+  color: black;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.text-container p {
+  font-size: 16px;
+  color: #4b5563; /* Gray color */
+  font-weight: 600;
+}
+
+.action-text {
+  font-size: 16px;
+  font-weight: 800;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.arrow-icon {
+  margin-left: 6px;
+  font-size: 20px;
+  color: black;
+}
+
+.aboutus-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  padding: 32px;
+}
+
+.aboutus-left {
+  background-color: white;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.aboutus-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.aboutus-heading h2 {
+  font-size: 22px;
+  color: #002653;
+  font-weight: 700;
+}
+
+.aboutus-description {
+  display: inline;
+  gap: 8px;
+  align-items: center;
+  border: 1px solid red;
+  font-size: 60px;
+  font-weight: bold;
+  color: black;
+  line-height: 1.2;
+}
+
+.aboutus-description span {
+  font-size: 50px;
+  font-weight: 400;
+  color: black;
+}
+.aboutus-description p {
+  font-size: 50px;
+}
+
+.aboutus-text {
+  border-left: 2px solid #1061df;
+  padding: 16px;
+  font-size: 16px;
+  color: #9ca3af;
+  font-family: "Roboto", sans-serif;
+}
+
+.aboutus-services {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.aboutus-service {
+  width: 257px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.service-logo {
+  height: 65px;
+  width: 65px;
+}
+
+.aboutus-service p {
+  font-size: 18px;
+  font-weight: 800;
+  color: black;
+}
+
+.aboutus-contact {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 32px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 16px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #06acf3;
+  color: white;
+  border-radius: 50px;
+  width: 160px;
+  height: 56px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-btn span {
+  margin-left: 8px;
+}
+
+.contact-info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.contact-phone {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.phone-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 2px solid #002653;
+  font-size: 24px;
+  color: #002653;
+}
+
+.phone-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-details p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.phone-details strong {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.aboutus-right {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.aboutus-image {
+  width: 581px;
+  height: 807px;
+}
+
+.aboutus-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* customer-review page */
+.customer-review-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 500px; /* Or use a min-height to ensure it has a size */
+  background-image: url("https://demo.casethemes.net/itfirm/wp-content/uploads/2021/11/h2-bg-section-06-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testomonial-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.testomonial-container {
+  width: 480px;
+
+  height: 331px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.testomonial-btn {
+  width: 177px;
+  height: 46px;
+  display: grid;
+  margin-bottom: 15px;
+  place-content: center;
+  border-radius: 25px;
+  background-color: white;
+  font-weight: 800;
+  font-family: "poppins";
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.testomonial-btn p {
+  background: linear-gradient(to right, #7114ef, #1475f7);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.testomonial-headingwrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  line-height: 3rem;
+}
+.testomonial-heading {
+  font-family: "Poppins";
+  color: #2e2d2d;
+  font-weight: 700;
+  font-size: 42px;
+}
+.customer-text {
+  color: #5333f2;
+  font-size: 42px;
+  font-family: Poppins;
+  font-weight: bold;
+}
+.testomonial-subheading {
+  font-size: 17px;
+  font-family: "Roboto";
+  color: #2e2d2d;
+}
+.below-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  gap: 10px;
+  width: 161px;
+  background-color: #4047f3;
+  border-radius: 35px;
+}
+
+.carousel-wrapper {
+  width: 700px;
+  padding: 10px;
+  height: 350px;
+  overflow: hidden;
+}
+.carousel-swipe {
+  height: 351px;
+  width: 660px;
+}
+.carousel-content {
+  height: 351px;
+  max-width: 660px;
+  z-index: 10;
+  width: 100%;
+  padding: 20px 18px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.carousel-rating {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.carousel-desc p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #74747c;
+  font-family: "roboto";
+  font-weight: 500;
+}
+
+.carousel-useravatar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+#avatar-img {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 2px;
+}
+.avatar {
+  margin-right: 18px;
+  padding: 3px;
+  position: relative;
+  min-width: 95px;
+  border-radius: 50%;
+  background-image: linear-gradient(to left, #7114ef, #1475f7);
+  width: 95px;
+  height: 95px;
+  overflow: hidden;
+  z-index: 1;
+}
+.avatar-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+.avatar-detail {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.dev-name {
+  font-size: 24px;
+  font-family: "fira sans";
+  color: #0c0022;
+  font-weight: 600;
+}
+
+.dev-position {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Roboto";
+  background: linear-gradient(to right, #7114ef, #1475f7);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.shadow-react-slick-btn {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
