@@ -857,6 +857,7 @@ span {
   width: 100%;
   height: 82px;
   display: flex;
+
   flex-direction: row;
   align-items: center;
   background-color: #002653;
@@ -867,6 +868,7 @@ span {
   margin: auto;
   padding: 10px;
   display: flex;
+
   flex-direction: row;
   justify-content: space-between;
 }
@@ -884,9 +886,11 @@ span {
   align-items: center;
   flex-direction: row;
   gap: 35px;
+  flex-wrap: wrap;
 }
 .li-item {
   display: flex;
+  flex-wrap: wrap;
   gap: 5px;
   font-family: "poppins";
   font-size: 14px;
@@ -941,7 +945,59 @@ span {
   padding-right: 20px;
   width: 100%;
 }
+
 .dropdown-li-item:hover {
   background-color: #002653;
   color: white;
+}
+
+@media screen and (max-width: 425px) {
+  .nav-container {
+    position: relative;
+  }
+  .icon {
+    height: 40px;
+    width: 50px;
+  }
+  .nav-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-link-wrapper {
+    width: auto;
+  }
+  .nav-logo {
+    border: 1px solid red;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .ul-container {
+    display: none;
+  }
+  .sm-dropdown {
+    width: 100%;
+    position: absolute;
+    top: 10;
+    left: 0;
+    height: 35%;
+  }
+}
+
+.sm-dropdown-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.accordian {
+  color: black;
+  padding: 35px;
+  height: 200px;
+  background-color: orange;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
