@@ -13,9 +13,9 @@ import CustomerReview from "./Pages/CustomerReview";
 function App() {
   return (
     <>
-      <HomePage />
-      {/* <AboutUs />
-      <Services />
+      {/* <HomePage /> */}
+      <AboutUs />
+      {/* <Services />
       <Footer />
       <Solution />
       <CustomerReview />

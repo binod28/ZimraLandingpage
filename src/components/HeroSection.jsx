@@ -42,28 +42,30 @@ const HeroSection = () => {
           <div className="get-started-button">Get started</div>
         </div>
         <div className="logos-section">
-                  <div className="logos-container">
+          <div className="logos-container">
             <div className="logo-wrapper">
               {data.map((item) => (
                 <div className="logo-item">
                   <img src={item} alt="company-logo" className="logo-img" />
                 </div>
               ))}
-           </div>
-            <p className="integration-text">
-              <span className="bold-text">100+ CRM integrations</span> for
-              streamlined collaboration now on KrispCall
-            </p>
+            </div>
+            <div className="integration-text">
+              <p className="text-[12px]">
+                <strong>100+ CRM</strong> integrations for streamlined
+                collaboration now on KrispCall
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="hero-image-container">
+      {/* <div className="hero-image-container">
         <img
           src="https://krispcall.com/wp-content/uploads/2024/08/home-page-KrispCall-AI-powered-modern-phone-app-for-your-team-scaled.webp"
           alt="screenshots"
           className="hero-image"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

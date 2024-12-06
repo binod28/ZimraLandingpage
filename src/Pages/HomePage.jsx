@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <>
       <SecondNavBar />
-      {/* <HeroSection /> */}
+      <HeroSection />
     </>
   );
 };
