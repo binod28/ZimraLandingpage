@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
 import { navbardata } from "../utils/navbardata";
 const SecondNavBar = () => {
   const [hoverItem, setHoverItem] = useState(null);
+  const [openDropDownMenu, setOpenDropDownMenu] = useState(false);
 
   return (
     <>
@@ -14,7 +15,7 @@ const SecondNavBar = () => {
             <img src="assets/logo/Zimra.jpg" alt="logo" className="nav-logo" />
           </div>
           <div className="nav-link-wrapper">
-            <ul className="ul-container relative">
+            <ul className="ul-container">
               {navbardata.map((item, index) => (
                 <a href={item.link} className="drop-down e">
                   <li
@@ -27,7 +28,7 @@ const SecondNavBar = () => {
                     {item.page ? (
                       <ul
                         className={`${
-                          hoverItem === index + 1 ? "" : "hidden"
+                          hoverItem === index + 1 ? "flex" : "hidden"
                         } dropdown-container`}
                       >
                         {item?.page.map((sub_item, key) => (
@@ -45,41 +46,70 @@ const SecondNavBar = () => {
             </ul>
 
             <div className="nav-btn">Get In Touch</div>
-            <div className="icon">
+            <div
+              className="icon"
+              onClick={() => setOpenDropDownMenu(!openDropDownMenu)}
+            >
               <IoMenu size={34} color="white" />
             </div>
           </div>
         </div>
       </div>
-      <DropDown />
+      {openDropDownMenu && <DropDown />}
     </>
   );
 };
 const DropDown = () => {
-  const [accordianIndex, setAccordianIndex] = useState(null);
-  function expand(id) {
-    setAccordianIndex(id);
-  }
+  const [accordianIndex, setAccordianIndex] = useState({
+    id: null,
+    open: false,
+  });
+  const ref = useRef(null);
+  const expand = (id) => {
+    setAccordianIndex((prev) => ({
+      id: prev.id === id ? null : id,
+      open: !prev.open,
+    }));
+  };
+
   return (
     <div className="sm-dropdown">
-      <div className="sm-dropdown-container">
+      <div className="sm-dropdown-container flex flex-col">
         {navbardata.map((item) => (
           <>
-            <div className="accordian " onClick={() => expand(item.id)}>
+            <div
+              className={`accordian w-full  ${
+                accordianIndex.id === item.id
+                  ? "bg-[#114b91] text-white"
+                  : "text-black"
+              } `}
+              onClick={() => expand(item.id)}
+            >
               <p>{item.navtitle}</p>
               <MdKeyboardArrowDown size={18} color="black" />
             </div>
-            {accordianIndex === item.id && (
-              <div className="transition-all ease-in-out duration-700 bg-green-500 h-[200px] w-full">
-                expanded Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Praesentium corrupti voluptatem impedit nisi voluptates
-                suscipit pariatur, assumenda, a aut et consequatur laudantium,
-                officiis atque quis nobis id? Similique eveniet veritatis ullam
-                possimus sapiente. Repellat ad assumenda neque vitae
-                voluptatibus blanditiis fugit. Ex sequi esse dolorem ab vel quos
-                consequuntur ullam!
+            <div
+              ref={ref}
+              className={`
+              ${
+                accordianIndex.open === true && accordianIndex.id === item.id
+                  ? "h-auto"
+                  : "h-[0rem]"
+              }
+              submenu-container transition-all ease-in-out duration-300`}
+            >
+              <div className="h-auto w-full flex flex-col">
+                {item.page?.length > 0 ? (
+                  item.page.map((item) => (
+                    <div className="submenu">
+                      <p>{item.name}</p>
+                    </div>
+                  ))
+                ) : (
+                  <></>
+                )}
               </div>
-            )}
+            </div>
           </>
         ))}
       </div>

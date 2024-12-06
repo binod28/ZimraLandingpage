@@ -77,7 +77,7 @@ export const navbardata = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     navtitle: "Company",
     path: "/",
     icon: <IoIosArrowDown size={16} color="white" />,
@@ -95,7 +95,7 @@ export const navbardata = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     navtitle: "Whats new",
     path: "/",
     icon: <IoIosArrowDown size={16} color="white" />,
@@ -113,7 +113,7 @@ export const navbardata = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     navtitle: "Contact",
     path: "/",
     dropdown: [],
