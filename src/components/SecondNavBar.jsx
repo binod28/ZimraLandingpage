@@ -64,10 +64,23 @@ const DropDown = () => {
     <div className="sm-dropdown">
       <div className="sm-dropdown-container">
         {navbardata.map((item) => (
-          <div className="accordian " onClick={() => expand(item.id)}>
-            <p>{item.navtitle}</p>
-            <MdKeyboardArrowDown size={18} color="black" />
-          </div>
+          <>
+            <div className="accordian " onClick={() => expand(item.id)}>
+              <p>{item.navtitle}</p>
+              <MdKeyboardArrowDown size={18} color="black" />
+            </div>
+            {accordianIndex === item.id && (
+              <div className="transition-all ease-in-out duration-700 bg-green-500 h-[200px] w-full">
+                expanded Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Praesentium corrupti voluptatem impedit nisi voluptates
+                suscipit pariatur, assumenda, a aut et consequatur laudantium,
+                officiis atque quis nobis id? Similique eveniet veritatis ullam
+                possimus sapiente. Repellat ad assumenda neque vitae
+                voluptatibus blanditiis fugit. Ex sequi esse dolorem ab vel quos
+                consequuntur ullam!
+              </div>
+            )}
+          </>
         ))}
       </div>
     </div>
