@@ -13,8 +13,8 @@ import CustomerReview from "./Pages/CustomerReview";
 function App() {
   return (
     <>
-      {/* <HomePage /> */}
-      <AboutUs />
+      <HomePage />
+      {/* <AboutUs /> */}
       {/* <Services />
       <Footer />
       <Solution />

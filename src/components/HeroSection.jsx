@@ -23,17 +23,17 @@ const HeroSection = () => {
           <span className="hero-highlight">AI powered </span>
           <span className="hero-subtext">modern phone app for your</span>
           <br />
-          <span className="hero-highlight hero-text-center">
+          <p className="typewriter">
             {displayText}
             <span className="blinking-cursor"></span>
-          </span>
-        </h1>
-        <div className="hero-description">
-          <p className="description-text">
-            Bring advanced telephony capabilities inside your CRM platforms with
-            KrispCall
           </p>
-        </div>
+        </h1>
+
+        <p className="description-text">
+          Bring advanced telephony capabilities inside your CRM platforms with
+          KrispCall
+        </p>
+
         <div className="action-buttons">
           <div className="demo-button">
             <IoCalendarOutline size={18} color="black" />
@@ -50,22 +50,22 @@ const HeroSection = () => {
                 </div>
               ))}
             </div>
-            <div className="integration-text">
-              <p className="text-[12px]">
-                <strong>100+ CRM</strong> integrations for streamlined
-                collaboration now on KrispCall
-              </p>
-            </div>
+
+            <p>
+              <strong>100+ CRM</strong> integrations for streamlined
+              collaboration now on
+              <span className="text-[#002653] font-bold">ZIMRA</span>
+            </p>
           </div>
         </div>
       </div>
-      {/* <div className="hero-image-container">
+      <div className="hero-image-container">
         <img
           src="https://krispcall.com/wp-content/uploads/2024/08/home-page-KrispCall-AI-powered-modern-phone-app-for-your-team-scaled.webp"
           alt="screenshots"
           className="hero-image"
         />
-      </div> */}
+      </div>
     </div>
   );
 };

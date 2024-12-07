@@ -15,35 +15,37 @@ const SecondNavBar = () => {
             <img src="assets/logo/Zimra.jpg" alt="logo" className="nav-logo" />
           </div>
           <div className="nav-link-wrapper">
-            <ul className="ul-container">
-              {navbardata.map((item, index) => (
-                <a href={item.link} className="drop-down e">
-                  <li
-                    className="li-item"
-                    onMouseEnter={() => setHoverItem(index + 1)}
-                    onMouseLeave={() => setHoverItem(null)}
-                  >
-                    <p>{item.navtitle}</p>
-                    {item.icon ?? item.icon}
-                    {item.page ? (
-                      <ul
-                        className={`${
-                          hoverItem === index + 1 ? "flex" : "hidden"
-                        } dropdown-container`}
-                      >
-                        {item?.page.map((sub_item, key) => (
-                          <li className="dropdown-li-item py-2">
-                            {sub_item.name}
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <></>
-                    )}
-                  </li>
-                </a>
-              ))}
-            </ul>
+            <div>
+              <ul className="ul-container">
+                {navbardata.map((item, index) => (
+                  <a href={item.link} className="drop-down e">
+                    <li
+                      className="li-item"
+                      onMouseEnter={() => setHoverItem(index + 1)}
+                      onMouseLeave={() => setHoverItem(null)}
+                    >
+                      <p>{item.navtitle}</p>
+                      {item.icon ?? item.icon}
+                      {item.page ? (
+                        <ul
+                          className={`${
+                            hoverItem === index + 1 ? "flex" : "hidden"
+                          } dropdown-container`}
+                        >
+                          {item?.page.map((sub_item, key) => (
+                            <li className="dropdown-li-item py-2">
+                              {sub_item.name}
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <></>
+                      )}
+                    </li>
+                  </a>
+                ))}
+              </ul>
+            </div>
 
             <div className="nav-btn">Get In Touch</div>
             <div
