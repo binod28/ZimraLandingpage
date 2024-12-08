@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { IoIosArrowDown } from "react-icons/io";
+
 import { navbardata } from "../utils/navbardata";
 const SecondNavBar = () => {
   const [hoverItem, setHoverItem] = useState(null);
@@ -15,37 +15,35 @@ const SecondNavBar = () => {
             <img src="assets/logo/Zimra.jpg" alt="logo" className="nav-logo" />
           </div>
           <div className="nav-link-wrapper">
-            <div>
-              <ul className="ul-container">
-                {navbardata.map((item, index) => (
-                  <a href={item.link} className="drop-down e">
-                    <li
-                      className="li-item"
-                      onMouseEnter={() => setHoverItem(index + 1)}
-                      onMouseLeave={() => setHoverItem(null)}
-                    >
-                      <p>{item.navtitle}</p>
-                      {item.icon ?? item.icon}
-                      {item.page ? (
-                        <ul
-                          className={`${
-                            hoverItem === index + 1 ? "flex" : "hidden"
-                          } dropdown-container`}
-                        >
-                          {item?.page.map((sub_item, key) => (
-                            <li className="dropdown-li-item py-2">
-                              {sub_item.name}
-                            </li>
-                          ))}
-                        </ul>
-                      ) : (
-                        <></>
-                      )}
-                    </li>
-                  </a>
-                ))}
-              </ul>
-            </div>
+            <ul className="ul-container">
+              {navbardata.map((item, index) => (
+                <a href={item.link} className="drop-down e">
+                  <li
+                    className="li-item"
+                    onMouseEnter={() => setHoverItem(index + 1)}
+                    onMouseLeave={() => setHoverItem(null)}
+                  >
+                    <p>{item.navtitle}</p>
+                    {item.icon ?? item.icon}
+                    {item.page ? (
+                      <ul
+                        className={`${
+                          hoverItem === index + 1 ? "flex" : "hidden"
+                        } dropdown-container`}
+                      >
+                        {item?.page.map((sub_item, key) => (
+                          <li className="dropdown-li-item py-2">
+                            {sub_item.name}
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <></>
+                    )}
+                  </li>
+                </a>
+              ))}
+            </ul>
 
             <div className="nav-btn">Get In Touch</div>
             <div
@@ -103,7 +101,7 @@ const DropDown = () => {
               <div className="h-auto w-full flex flex-col">
                 {item.page?.length > 0 ? (
                   item.page.map((item) => (
-                    <div className="submenu">
+                    <div className="submenu ">
                       <p>{item.name}</p>
                     </div>
                   ))

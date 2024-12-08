@@ -6,7 +6,7 @@ import SecondNavBar from "../components/SecondNavBar";
 const HomePage = () => {
   return (
     <>
-      {/* <SecondNavBar /> */}
+      <SecondNavBar />
       <HeroSection />
     </>
   );

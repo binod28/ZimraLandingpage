@@ -20,9 +20,8 @@ const HeroSection = () => {
     <div className="hero-container">
       <div className="hero-content">
         <h1 className="hero-heading">
-          <span className="hero-highlight">AI powered </span>
-          <span className="hero-subtext">modern phone app for your</span>
-          <br />
+          <p className="hero-highlight">AI powered modern phone app for your</p>
+
           <p className="typewriter">
             {displayText}
             <span className="blinking-cursor"></span>
@@ -50,11 +49,10 @@ const HeroSection = () => {
                 </div>
               ))}
             </div>
-
             <p>
               <strong>100+ CRM</strong> integrations for streamlined
               collaboration now on
-              <span className="text-[#002653] font-bold">ZIMRA</span>
+              <strong className="text-[#002653] font-bold ">&nbsp;ZIMRA</strong>
             </p>
           </div>
         </div>

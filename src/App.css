@@ -845,14 +845,6 @@ span {
   justify-content: space-between;
 }
 
-.ul-container {
-  display: flex;
-  position: relative;
-  justify-items: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 35px;
-}
 .li-item {
   display: flex;
   flex-wrap: wrap;
@@ -872,20 +864,9 @@ span {
   cursor: pointer;
 }
 
-.nav-btn {
-  width: 169px;
-  font-size: 18px;
-  display: grid;
-  padding: 18px;
-  place-content: center;
-  font-family: "poppins";
-  font-weight: 600;
-  border: 1px solid white;
-}
-
 .dropdown-container {
   position: absolute;
-  top: 24px;
+  top: 75px;
   height: auto;
   padding-bottom: 10px;
   flex-direction: column;
@@ -916,73 +897,146 @@ span {
 }
 
 /* navbar responsive CSS */
-@media screen and (max-width: 2560px) {
-  .nav-btn {
-    padding: 14px;
-    margin-right: 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-family: "poppins";
-    font-weight: 500;
-  }
-  .nav-link-wrapper {
-    width: 50%;
-    display: flex !important;
 
-    flex-direction: row;
-    justify-content: space-between !important;
-  }
-  .ul-container {
-    height: 100%;
-  }
-  .icon {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .nav-btn {
-    padding: 14px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-family: "poppins";
-    font-weight: 500;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .nav-btn {
-    display: row;
-  }
-  .ul-container {
-    display: none;
+@media screen and (max-width: 3000px) {
+  .nav-container {
+    height: 8rem;
+    position: sticky;
+    top: 0;
+    z-index: 20;
   }
   .nav-link-wrapper {
     display: flex;
+    width: 100%;
     justify-content: end;
-    gap: 2rem;
+    padding: 0px 25px;
+    gap: 10rem;
+    align-items: center;
+  }
+  .nav-btn {
+    border: 1px solid white;
+    width: 10rem;
+    padding: 12px 0px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ul-container {
+    display: flex;
+    width: 40%;
+    flex-direction: row;
+    height: 100%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 30;
+  }
+
+  .nav-logo {
+    width: 200px;
+    height: 80px;
+  }
+  .icon {
+    display: none;
+    color: white;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 2000px) {
+  .nav-container {
+    height: 8rem;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+  .nav-link-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding: 0px 25px;
+    gap: 50px;
+    align-items: center;
+  }
+  .nav-btn {
+    border: 1px solid white;
+    width: 10rem;
+
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ul-container {
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    height: 100%;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 30;
+  }
+
+  .nav-logo {
+    width: 200px;
+    height: 80px;
+  }
+  .icon {
+    display: flex;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ul-container {
+    display: none;
+  }
+
+  .nav-link-wrapper {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-btn {
+    display: flex;
+    border: 1px solid white;
+    padding: 10px 25px;
+    border-radius: 5px;
+  }
+
+  .icon {
+    display: row;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-btn {
+    display: none !important;
+  }
   .nav-container {
     position: relative;
     border: 1px solid green;
   }
-  .nav-btn {
-    display: none;
-  }
+
   .icon {
     height: 40px;
     width: 50px;
-    display: block;
+    display: row;
   }
+
   .nav-wrapper {
-    flex-direction: row;
+    display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
   }
+
   .nav-link-wrapper {
     width: auto;
+    align-items: center;
   }
 
   .sm-dropdown {
@@ -998,10 +1052,15 @@ span {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
+  body {
+    background-color: orange;
+  }
   .nav-container {
-    position: relative;
+    position: sticky;
     border: 1px solid green;
+    top: 0;
+    z-index: 30;
   }
   .nav-btn {
     display: none;
@@ -1013,7 +1072,6 @@ span {
   }
   .nav-wrapper {
     flex-direction: row;
-
     align-items: center;
     justify-content: space-between;
   }
@@ -1293,7 +1351,82 @@ span {
 }
 
 /* herosection responsive css */
-@media screen and (max-width: 2560px) {
+
+.hero-container {
+  width: 100%;
+  margin: 0px -15px;
+  padding: 0px 85px;
+}
+
+.hero-content {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-highlight {
+  color: #002653;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.hero-subtext {
+  font-size: 48px;
+}
+
+.logos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10;
+}
+
+.hero-image-container {
+  width: 100%;
+  height: 475px;
+}
+.logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.typewriter {
+  font-size: 48px;
+  color: var(--primary-color);
+  font-family: "poppins";
+  font-weight: 500;
+}
+.blinking-cursor {
+  background-color: black;
+  display: inline-block;
+  width: 2.5px;
+  height: 40px;
+  animation: blink 0.7s infinite step-start;
+}
+.logos-container {
+  flex-direction: row;
+}
+
+.logos-container > p {
+  font-size: 16px;
+  color: #474e5a;
+  text-align: center;
+  white-space: wrap;
+  font-weight: 500;
+}
+
+.logos-container > p > strong {
+  color: #474e57;
+  font-weight: 700;
+  font-family: "poppins";
+  font-size: 16px;
+}
+.description-text {
+  font-size: 16px;
+  margin-top: 24px;
+  color: #474e5a;
+}
+
+@media screen and (min-width: 2560px) {
   .hero-container {
     width: 100%;
     margin: 0 -15px;
@@ -1329,6 +1462,7 @@ span {
   .logo-wrapper {
     display: flex;
     flex-direction: row;
+    gap: 15px;
   }
   .typewriter {
     font-size: 48px;
@@ -1377,7 +1511,6 @@ span {
   .hero-content {
     width: 100%;
     text-align: center;
-    border: 1px solid red;
   }
   .hero-highlight {
     color: #002653;
@@ -1394,6 +1527,7 @@ span {
   }
   .hero-image-container {
     height: 654px;
+    padding: 0px 15px;
   }
   .logo-wrapper {
     display: flex;
@@ -1413,7 +1547,6 @@ span {
     animation: blink 0.7s infinite step-start;
   }
   .logos-container {
-    border: 1px solid red;
     flex-direction: row;
   }
   .logos-container > p {
@@ -1505,8 +1638,8 @@ span {
 @media screen and (max-width: 768px) {
   .hero-container {
     width: 100%;
-    margin: 0 15px;
-    padding: 0 24px;
+    margin: auto;
+    padding: 0 20px;
   }
 
   .hero-heading {
@@ -1515,12 +1648,18 @@ span {
     padding: 0 10px;
   }
   .hero-highlight {
-    font-size: 32px;
+    font-size: 28px;
   }
   .hero-subtext {
-    font-size: 32px;
+    font-size: 28px;
   }
+  .logo-section {
+    width: 100%;
+  }
+
   .logos-container {
+    width: 100%;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     gap: 10;
@@ -1532,11 +1671,16 @@ span {
   .hero-image-container {
     width: 100%;
     height: 352px;
-    margin: auto;
+    padding: 0px 0px;
+    margin: 0px;
   }
   .logo-wrapper {
     display: flex;
+    margin: auto;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
   }
   .typewriter {
     font-size: 32px;
@@ -1562,39 +1706,47 @@ span {
   .logos-container > p > strong {
     color: rgb(93, 91, 91);
     font-weight: 700;
+    font-size: 12px;
     font-family: "poppins";
   }
 }
 
 @media screen and (max-width: 425px) {
   .hero-container {
-    max-width: 100%;
+    width: 100%;
     margin: auto;
+    padding: 0px 0px;
+  }
+
+  .action-buttons {
+    padding: 15px 20px;
   }
 
   .hero-heading {
     text-align: center;
     width: 100%;
-    padding: 0 10px;
+    padding: 0px 20px;
   }
 
   .hero-highlight {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .hero-subtext {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .logos-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10;
+    border: 1px solid green;
   }
 
   .description-text {
     font-size: 14px;
-    margin-top: 10px;
+    padding: 0px 20px;
   }
 
   .hero-image-container {
@@ -1602,12 +1754,14 @@ span {
     height: 352px;
     margin: auto;
   }
+
   .logo-wrapper {
     display: flex;
+    width: 100%;
     flex-direction: row;
+    gap: 7px;
   }
   .typewriter {
-    font-size: 32px;
     color: var(--primary-color);
     font-size: 28px;
     font-family: "poppins";
@@ -1628,6 +1782,7 @@ span {
     font-weight: 500;
   }
   .logos-container > p > strong {
+    font-size: 12px;
     color: rgb(93, 91, 91);
     font-weight: 700;
     font-family: "poppins";
