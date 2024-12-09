@@ -14,10 +14,10 @@ function App() {
   return (
     <>
       <HomePage />
-      {/* <AboutUs /> */}
-      {/* <Services />
-      <Footer />
-      <Solution />
+      <AboutUs />
+      {/* <Services /> */}
+      {/* <Footer /> */}
+      {/* <Solution />
       <CustomerReview />
       <FloatingButton /> */}
     </>

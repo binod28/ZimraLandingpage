@@ -52,10 +52,9 @@ const AboutUs = () => {
         </div>
       </div>
       {/* about your company */}
-
       <div className="aboutus-grid-container">
-        <div className="aboutus-grid-wrapper">
-          <div className="flex flex-col items-start gap-2  ">
+        <div div className="aboutus-grid-wrapper">
+          <div className="flex flex-col items-start gap-2 ">
             <h2 className="aboutus-grid-title">About our company</h2>
           </div>
           <div className="aboutus-grid-header-text">
@@ -81,7 +80,7 @@ const AboutUs = () => {
               <div className="about-service-logo-wrapper">
                 <img
                   src="/assets/logo/support.png"
-                  className="h-[54px] w-[54px] lg:h-[85px] lg:w-[85px]"
+                  className="h-[54px] w-[54px] lg:h-[54px] lg:w-[54px]"
                 />
               </div>
               <p className="aboutus-service-desc">
@@ -92,13 +91,13 @@ const AboutUs = () => {
             <div className="aboutus-service-wrapper">
               <div className="about-service-logo-wrapper">
                 <img
-                  src="/assets/logo/customerservice.png"
-                  className="h-[54px] w-[54px] lg:h-[85px] lg:w-[85px]"
+                  src="/assets/logo/support.png"
+                  className="h-[54px] w-[54px] lg:h-[54px] lg:w-[54px]"
                 />
               </div>
               <p className="aboutus-service-desc">
-                MoneyBack <br />
-                Gurentee
+                Technical <br />
+                Support
               </p>
             </div>
           </div>
@@ -123,11 +122,11 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className="mt-24">
+        <div className="img-container">
           <img
             src="https://demo.casethemes.net/itfirm/wp-content/uploads/2022/12/h8-banner1.png"
-            alt="hero-image"
-            className="object-cover grid-image "
+            alt="aboutus-img"
+            className="object-cover"
           />
         </div>
       </div>
