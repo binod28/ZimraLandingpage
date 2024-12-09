@@ -13,7 +13,7 @@ const Footer = () => {
     <div class="footer-container">
       <div class="footer-top">
         <div class="footer-content">
-          <div className="">
+          <div>
             <h2 class="footer-title">
               Looking for the Best IT Business Solutions?
             </h2>
@@ -137,7 +137,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="footer-divider-line"></div>
+        {/* <div class="footer-divider-line"></div> */}
       </div>
       <div class="footer-bottom">
         <p class="footer-copy">©2024 Zimra All rights reserved.</p>

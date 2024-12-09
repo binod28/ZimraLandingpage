@@ -16,7 +16,7 @@ function App() {
       <HomePage />
       <AboutUs />
       {/* <Services /> */}
-      {/* <Footer /> */}
+      <Footer />
       {/* <Solution />
       <CustomerReview />
       <FloatingButton /> */}
