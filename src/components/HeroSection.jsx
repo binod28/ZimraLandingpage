@@ -17,7 +17,7 @@ const HeroSection = () => {
   const speed = 50;
   const displayText = useTypeWriter({ text: heroText, speed: 60 });
   return (
-    <div className="hero-container">
+    <div className="hero-container 3xl:h-screen">
       <div className="hero-content">
         <h1 className="hero-heading">
           <p className="hero-highlight">AI powered modern phone app for your</p>

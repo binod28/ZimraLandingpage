@@ -5,7 +5,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
-    <>
+    <div>
       <div className="leftrounded-container">
         <div>
           <div className="circle-share">
@@ -130,7 +130,7 @@ const AboutUs = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      screens: {
+        "3xl": "2560px", // Add custom breakpoint for 2560px
+      },
+
       transitionTimingFunction: {
         custom: "cubic-bezier(.38, 3, .57, 1.6)",
       },

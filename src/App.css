@@ -393,7 +393,7 @@ span {
 }
 .about-rounded-container {
   position: relative;
-  margin-left: 30%;
+  padding-left: 30%;
   margin-top: -40px;
   width: 70%;
   background-color: gray;
@@ -511,7 +511,7 @@ span {
   display: inline;
   gap: 8px;
   align-items: center;
-  border: 1px solid red;
+
   font-size: 60px;
   font-weight: bold;
   color: black;
@@ -857,7 +857,7 @@ span {
 
 .dropdown-container {
   position: absolute;
-  top: 75px;
+  top: 55px;
   height: auto;
   padding-bottom: 10px;
   flex-direction: column;
@@ -972,7 +972,6 @@ span {
   max-width: 450px;
   height: 155px;
   display: flex;
-
   align-items: center;
   gap: 2rem;
   justify-content: center;
@@ -1026,7 +1025,6 @@ span {
   padding-left: 5rem /* 80px */;
   /* padding-right: 5rem; */
 }
-
 .aboutus-grid-title {
   font-weight: 700;
   color: #002653;
@@ -1233,10 +1231,9 @@ span {
 @media screen and (min-width: 2560px) {
   /* navbar responsive */
   .nav-container {
-    height: 8rem;
     position: sticky;
     top: 0;
-    z-index: 20;
+    z-index: 9999;
   }
   .nav-link-wrapper {
     display: flex;
@@ -1246,10 +1243,11 @@ span {
     gap: 10rem;
     align-items: center;
   }
+
   .nav-btn {
-    border: 1px solid orange;
     width: 10rem;
-    height: 5rem;
+    border: 1px solid;
+    padding: 15px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -1274,6 +1272,13 @@ span {
   .icon {
     display: none;
     color: white;
+  }
+
+  .aboutus-grid-container {
+    display: grid;
+    gap: 20rem;
+    max-width: 60%;
+    margin: auto;
   }
 
   /* herosection responsive */
@@ -1371,6 +1376,128 @@ span {
   cursor: pointer;
 } */
 
+  .footer-container {
+    width: 100%;
+    background-color: #03051e;
+    padding-left: 0px;
+  }
+
+  .footer-top {
+    height: auto;
+  }
+
+  .footer-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 44rem;
+    padding: 30px;
+    align-items: center;
+    background-color: #0f0f35;
+  }
+
+  .footer-title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Fira Sans", sans-serif;
+    color: white;
+  }
+
+  .footer-description {
+    font-size: 15px;
+    font-family: "Fira Sans", sans-serif;
+    color: white;
+  }
+
+  .footer-button {
+    width: 175px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    background-color: #2b5ef5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+
+  .footer-middle {
+    width: 100%;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    max-width: 60%;
+    padding: 30px 0px;
+    margin: auto;
+    justify-items: center;
+  }
+
+  .footer-column {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-heading {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: white;
+  }
+
+  .footer-text {
+    font-size: 15px;
+    color: white;
+    line-height: 1.8;
+  }
+
+  .footer-link {
+    width: 100px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(45deg, #1e62fb, #5c9eff);
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .footer-divider {
+    width: 100px;
+    border-top: 2px solid #1475f7;
+  }
+
+  .footer-subscribe {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-input {
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+    background-color: #0f0f35;
+    border: none;
+    color: white;
+    font-size: 15px;
+  }
+
+  .footer-submit {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, #1e62fb, #5c9eff);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+
   .footer-socials {
     display: flex;
     gap: 15px;
@@ -1384,6 +1511,7 @@ span {
     place-items: center;
     cursor: pointer;
   }
+
   .footer-info {
     display: flex;
     gap: 10px;
@@ -1458,12 +1586,12 @@ span {
   }
 }
 
-@media only screen and (max-width: 2560px) {
+@media only screen and (max-width: 2559px) {
   .nav-container {
-    height: 8rem;
+    top: 0px;
+
     position: sticky;
-    top: 0;
-    z-index: 20;
+    z-index: 999;
   }
   .nav-link-wrapper {
     display: flex;
@@ -1485,6 +1613,7 @@ span {
   .ul-container {
     display: flex;
     width: 40%;
+
     flex-direction: row;
     height: 100%;
     gap: 1rem;
@@ -1503,10 +1632,12 @@ span {
   .icon {
     display: none;
   }
+
   /* footer css responsive */
   .footer-container {
     width: 100%;
     background-color: #03051e;
+    padding-left: 0px;
   }
 
   .footer-top {
@@ -1707,15 +1838,18 @@ span {
     font-family: "Fira Sans", sans-serif;
     line-height: 1.5;
   }
+  .customer-review-container {
+    height: 100vh;
+    gap: 5rem;
+  }
 }
 
 @media screen and (max-width: 1440px) {
   /* navbar respomsive */
   .nav-container {
-    height: 8rem;
     position: sticky;
     top: 0;
-    z-index: 20;
+    z-index: 999;
   }
   .nav-link-wrapper {
     display: flex;
@@ -1728,7 +1862,6 @@ span {
   .nav-btn {
     border: 1px solid white;
     width: 10rem;
-
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -1875,8 +2008,33 @@ span {
     flex-direction: row;
     justify-items: space-between;
     gap: 20rem;
+    padding: 30px;
     align-items: center;
     width: 100%;
+  }
+
+  .footer-hours {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-hours-heading {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .footer-hours-text {
+    font-size: 14px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    color: rgb(151, 148, 148);
+  }
+  .footer-info-text {
+    font-size: 14px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    color: rgb(151, 148, 148);
   }
 }
 
@@ -1884,6 +2042,23 @@ span {
   /* navbar responsive */
   .ul-container {
     display: none;
+  }
+  .nav-container {
+    top: 0;
+    max-width: 100%;
+    position: sticky;
+    z-index: 999;
+  }
+
+  .nav-container {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 82px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #002653;
   }
 
   .nav-link-wrapper {
@@ -1900,6 +2075,10 @@ span {
 
   .icon {
     display: row;
+  }
+  .nav-logo {
+    width: 100px;
+    height: 80px;
   }
 
   /* hero responsive */
@@ -2020,13 +2199,19 @@ span {
     margin-top: 2rem;
     line-height: 2rem;
   }
+
+  .aboutus-contact-btn {
+    width: 167px;
+    height: 56px;
+  }
   .aboutus-button-wrapper {
     display: flex;
     height: auto;
-    flex-direction: row;
-    align-items: center;
-    gap: 0;
-    justify-content: between;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    padding-left: 10px;
+    justify-content: start;
   }
   .aboutus-callbtn-container {
     padding: 5px;
@@ -2082,6 +2267,13 @@ span {
     justify-content: start;
   }
 
+  .footer-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
   .footer-content {
     display: flex;
     width: 100%;
@@ -2093,13 +2285,7 @@ span {
     gap: 5rem;
     background-color: #0f0f35;
   }
-  .footer-grid {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-items: center;
-  }
+
   .footer-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -2169,16 +2355,200 @@ span {
     font-weight: 400;
     color: rgb(151, 148, 148);
   }
+  .customer-review-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://demo.casethemes.net/itfirm/wp-content/uploads/2021/11/h2-bg-section-06-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .testomonial-wrapper {
+    max-height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+  }
+  .testomonial-container {
+    padding-left: 15px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+  }
+  .testomonial-btn {
+    width: 177px;
+    height: 46px;
+    display: grid;
+    margin-bottom: 15px;
+    place-content: center;
+    border-radius: 25px;
+    background-color: white;
+    font-weight: 800;
+    font-family: "poppins";
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+  .testomonial-btn p {
+    background: linear-gradient(to right, #7114ef, #1475f7);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .testomonial-headingwrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    line-height: 3rem;
+  }
+  .testomonial-heading {
+    font-family: "Poppins";
+    color: #2e2d2d;
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .customer-text {
+    color: #5333f2;
+    font-size: 32px;
+    font-family: Poppins;
+    font-weight: bold;
+  }
+  .testomonial-subheading {
+    font-size: 17px;
+    font-family: "Roboto";
+    color: #2e2d2d;
+  }
+  .below-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    gap: 10px;
+    width: 161px;
+    background-color: #4047f3;
+    border-radius: 35px;
+  }
+
+  .carousel-wrapper {
+    width: 500px;
+    padding: 10px;
+
+    height: 350px;
+    overflow: hidden;
+  }
+  .carousel-swipe {
+    height: 351px;
+    width: 100%;
+  }
+
+  .carousel-content {
+    width: 500px;
+    padding: 5px;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .carousel-rating {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .carousel-desc p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #74747c;
+    font-family: "roboto";
+    font-weight: 400;
+  }
+
+  .carousel-useravatar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+  }
+
+  #avatar-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 2px;
+  }
+  .avatar {
+    margin-right: 18px;
+    padding: 3px;
+    position: relative;
+    min-width: 66px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left, #7114ef, #1475f7);
+    width: 66px;
+    height: 66px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .avatar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+  }
+  .avatar-detail {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+
+  .dev-name {
+    font-size: 18px;
+    font-family: "fira sans";
+    color: #0c0022;
+    font-weight: 600;
+  }
+
+  .carousel-shadow {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+
+  .dev-position {
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Roboto";
+    background: linear-gradient(to right, #7114ef, #1475f7);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .shadow-react-slick-btn {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* navbar responsive */
   .nav-btn {
     display: none !important;
   }
   .nav-container {
-    position: relative;
-    border: 1px solid green;
+    top: 0;
+    position: sticky;
+
+    z-index: 999;
   }
 
   .icon {
@@ -2378,6 +2748,7 @@ span {
     flex-direction: column;
     justify-items: start;
     gap: 10px;
+
     align-items: start;
   }
   .footer-grid {
@@ -2391,6 +2762,7 @@ span {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
+    place-content: start;
     height: 220px;
   }
   .footer-column {
@@ -2461,18 +2833,208 @@ span {
     align-items: start;
     padding-left: 15px;
   }
+  /* customerreview responsive */
+  /* customerreview responsive */
+  .customer-review-container {
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+    background-image: url("https://demo.casethemes.net/itfirm/wp-content/uploads/2021/11/h2-bg-section-06-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .testomonial-wrapper {
+    max-height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 50%;
+  }
+  .testomonial-container {
+    padding-left: 15px;
+    width: 100%;
+
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+  }
+  .testomonial-btn {
+    width: 177px;
+    height: 46px;
+    display: grid;
+    margin-bottom: 15px;
+    place-content: center;
+    border-radius: 25px;
+    background-color: white;
+    font-weight: 800;
+    font-family: "poppins";
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+  .testomonial-btn p {
+    background: linear-gradient(to right, #7114ef, #1475f7);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .testomonial-headingwrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    line-height: 3rem;
+  }
+  .testomonial-heading {
+    font-family: "Poppins";
+    color: #2e2d2d;
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .customer-text {
+    color: #5333f2;
+    font-size: 32px;
+    font-family: Poppins;
+    font-weight: bold;
+  }
+  .testomonial-subheading {
+    font-size: 17px;
+    font-family: "Roboto";
+    color: #2e2d2d;
+  }
+  .below-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    gap: 10px;
+    width: 161px;
+    background-color: #4047f3;
+    border-radius: 35px;
+  }
+
+  .carousel-wrapper {
+    width: 700px;
+    padding: 10px;
+
+    height: 350px;
+    overflow: hidden;
+  }
+  .carousel-swipe {
+    height: 351px;
+    width: 100%;
+  }
+
+  .carousel-content {
+    width: 500px;
+    padding: 5px;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .carousel-rating {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .carousel-desc p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #74747c;
+    font-family: "roboto";
+    font-weight: 400;
+  }
+
+  .carousel-useravatar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+  }
+
+  #avatar-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 2px;
+  }
+  .avatar {
+    margin-right: 18px;
+    padding: 3px;
+    position: relative;
+    min-width: 66px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left, #7114ef, #1475f7);
+    width: 66px;
+    height: 66px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .avatar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+  }
+  .avatar-detail {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+
+  .dev-name {
+    font-size: 18px;
+    font-family: "fira sans";
+    color: #0c0022;
+    font-weight: 600;
+  }
+
+  .carousel-shadow {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+
+  .dev-position {
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Roboto";
+    background: linear-gradient(to right, #7114ef, #1475f7);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .shadow-react-slick-btn {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
   /* navbar responsive */
   .nav-container {
-    position: sticky;
-    border: 1px solid green;
     top: 0;
-    z-index: 30;
+    position: sticky;
+
+    z-index: 999;
   }
   .nav-btn {
     display: none;
+  }
+  .nav-logo {
+    height: 60px;
+    width: 120px;
   }
   .icon {
     height: 40px;
@@ -2530,7 +3092,6 @@ span {
     display: flex;
     flex-direction: column;
     gap: 10;
-    border: 1px solid green;
   }
 
   .description-text {
@@ -2540,7 +3101,6 @@ span {
 
   .hero-image-container {
     width: 100%;
-
     height: 210px;
     margin: auto;
   }
@@ -2609,11 +3169,11 @@ span {
   .aboutus-grid-wrapper {
     width: 100%;
     overflow: hidden;
-    padding: 0rem;
+    padding: 0px;
   }
   .aboutus-grid-title {
     font-size: 22px;
-    margin-left: 20px;
+    padding-left: 20px;
   }
   .aboutus-grid-header-text {
     width: 100%;
@@ -2650,7 +3210,6 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     height: 15rem;
     align-items: start;
     gap: 1rem;
@@ -2666,9 +3225,8 @@ span {
   .aboutus-grid-container {
     display: grid;
     grid-template-columns: 1fr;
-
     overflow: hidden;
-    grid-template-columns: 1fr;
+    padding: 50px 0px;
   }
 
   .aboutus-button-wrapper {
@@ -2702,7 +3260,8 @@ span {
     width: 95%;
   }
   /* footer section responsive */
-
+  .footer-container {
+  }
   .footer-title {
     font-size: 24px;
     font-weight: bold;
@@ -2716,32 +3275,30 @@ span {
     color: white;
   }
 
-  .footer-top {
-    height: auto;
-  }
   .footer-middle {
     width: 100%;
     display: flex;
     align-items: start;
-    justify-content: start;
+    justify-content: space-between;
     /* adjust here */
   }
   .footer-content {
+    height: 190px;
     width: 100%;
     display: flex;
-    height: 200px;
     flex-direction: column;
     justify-items: center;
     gap: 5px;
-    background-color: #0f0f35;
-    padding: 8px 10px;
+
+    padding: 10px 10px;
   }
+
   .footer-grid {
     display: grid;
     grid-template-columns: 1fr;
     padding: 40px 0px;
+    place-content: center;
     align-items: center;
-    justify-items: center;
   }
   .footer-gallery {
     display: grid;
@@ -2766,6 +3323,7 @@ span {
     background-color: #0f0f35;
     border: none;
     padding-left: 10px;
+
     color: white;
     font-size: 15px;
   }
@@ -2811,6 +3369,189 @@ span {
     font-family: "Fira Sans", sans-serif;
     font-weight: 400;
     color: rgb(151, 148, 148);
+  }
+  /* customerreview responsive */
+  .customer-review-container {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: auto;
+    display: flex;
+    gap: 0rem;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .testomonial-wrapper {
+    max-height: 478px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+  }
+  .testomonial-container {
+    padding-left: 30px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+  }
+  .testomonial-btn {
+    width: 177px;
+    height: 46px;
+    display: grid;
+    margin-bottom: 15px;
+    place-content: center;
+    border-radius: 25px;
+    background-color: white;
+    font-weight: 800;
+    font-family: "poppins";
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+  .testomonial-btn p {
+    background: linear-gradient(to right, #7114ef, #1475f7);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .testomonial-headingwrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    line-height: 3rem;
+  }
+  .testomonial-heading {
+    font-family: "Poppins";
+    color: #2e2d2d;
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .customer-text {
+    color: #5333f2;
+    font-size: 32px;
+    font-family: Poppins;
+    font-weight: bold;
+  }
+  .testomonial-subheading {
+    font-size: 17px;
+    font-family: "Roboto";
+    color: #2e2d2d;
+  }
+  .below-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    gap: 10px;
+    width: 161px;
+    background-color: #4047f3;
+    border-radius: 35px;
+  }
+
+  .carousel-wrapper {
+    width: 700px;
+    padding: 10px;
+    height: 350px;
+    overflow: hidden;
+  }
+  .carousel-swipe {
+    height: 351px;
+    width: 100%;
+  }
+
+  .carousel-content {
+    width: 660px;
+    padding: 5px;
+    height: 300px;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .carousel-rating {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .carousel-desc p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #74747c;
+    font-family: "roboto";
+    font-weight: 400;
+  }
+
+  .carousel-useravatar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+  }
+
+  #avatar-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 2px;
+  }
+  .avatar {
+    padding-right: 18px;
+    padding: 3px;
+    position: relative;
+    min-width: 66px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left, #7114ef, #1475f7);
+    width: 66px;
+    height: 66px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .avatar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+  }
+  .avatar-detail {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+
+  .dev-name {
+    font-size: 18px;
+    font-family: "fira sans";
+    color: #0c0022;
+    font-weight: 600;
+  }
+
+  .carousel-shadow {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+
+  .dev-position {
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Roboto";
+    background: linear-gradient(to right, #7114ef, #1475f7);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .shadow-react-slick-btn {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
 /* footer css */

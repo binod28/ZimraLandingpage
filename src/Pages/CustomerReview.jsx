@@ -10,8 +10,8 @@ import { useRef } from "react";
 const CustomerReview = () => {
   const sliderRef = useRef(null);
   return (
-    <div className="customer-review-container">
-      <div className="testomonial-wrapper">
+    <div className="customer-review-container ">
+      <div className="testomonial-wrapper ">
         <div className="testomonial-container">
           <div>
             <div className="testomonial-btn">
@@ -37,15 +37,9 @@ const CustomerReview = () => {
           </div>
         </div>
       </div>
-      <div
-        className="relative h-auto w-[800px] flex flex-col items-start justify-center lg:px-14 
-             "
-      >
-        {/* <div className="carousel-swipe">
-                       
-                    </div> */}
+      <div className="flex justify-center h-[30rem] w-[100%] relative lg:h-auto md:w-[55%] md:h-[24rem] lg:w-[500px] lg:flex-col lg:justify-center lg:items-center  ">
         <ReviewCarousel sliderReference={sliderRef} />
-        <div className="absolute z-50 w-full gap-5 h-10 bottom-14 flex items-center justify-end right-20">
+        <div className="absolute bottom-32 right-10 z-20 w-full gap-5 h-10 flex items-center md:bottom-0 justify-end lg:right-20  lg:bottom-48 xl:bottom-80 3xl:bottom-10">
           <div
             className="w-12 h-12 bg-white rounded-full grid place-content-center shadow-react-slick-btn"
             onClick={() => sliderRef.current.slickPrev()}
@@ -69,7 +63,7 @@ const CarouselCard = () => {
     <div className="carousel-content">
       <div className="carousel-rating">
         {[1, 2, 3, 4, 5].map((ind) => (
-          <FaStar key={ind} size={24} color="#FFCC00" />
+          <FaStar key={ind} size={18} color="#FFCC00" />
         ))}
       </div>
       <div className="carousel-desc">

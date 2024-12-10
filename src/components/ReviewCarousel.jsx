@@ -10,12 +10,11 @@ const ReviewCarousel = ({ sliderReference }) => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-
     slidesToScroll: 1,
     initialSlide: 1,
   };
   return (
-    <div className="carousel-wrapper ">
+    <div className="carousel-wrapper">
       <Slider ref={sliderReference} {...settings}>
         <CarouselCard customerImageUrl="https://tinyurl.com/2b7pb83k" />
         <CarouselCard customerImageUrl="https://media.istockphoto.com/id/2155508446/photo/girl-in-a-cat-mask-on-the-background-of-a-green-park-people-are-animals-sports-quadrobics.webp?a=1&b=1&s=612x612&w=0&k=20&c=up7G1x0VpS8mMaqMljNp9LF4VmZIoLcLMDGi3kwaV1M=" />

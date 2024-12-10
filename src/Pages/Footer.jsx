@@ -11,18 +11,16 @@ import { FaLocationDot } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div class="footer-container">
-      <div class="footer-top">
-        <div class="footer-content">
-          <div>
-            <h2 class="footer-title">
-              Looking for the Best IT Business Solutions?
-            </h2>
-            <p class="footer-description">
-              As a app web crawler expert, We will help to organize.
-            </p>
-          </div>
-          <div class="footer-button">Get a quote</div>
-        </div>
+      <div class="footer-content">
+        <span>
+          <h2 class="footer-title">
+            Looking for the Best IT Business Solutions?
+          </h2>
+          <p class="footer-description">
+            As a app web crawler expert, We will help to organize.
+          </p>
+        </span>
+        <div class="footer-button">Get a quote</div>
       </div>
       <div class="footer-middle">
         <div class="footer-grid">

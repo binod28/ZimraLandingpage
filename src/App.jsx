@@ -15,11 +15,11 @@ function App() {
     <>
       <HomePage />
       <AboutUs />
-      {/* <Services /> */}
-      <Footer />
-      {/* <Solution />
+      <Services />
+      <Solution />
       <CustomerReview />
-      <FloatingButton /> */}
+      <Footer />
+      {/* <FloatingButton /> */}
     </>
   );
 }
